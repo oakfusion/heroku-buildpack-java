@@ -1,7 +1,12 @@
 Heroku buildpack: Java
 =========================
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for Java apps.
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpack) for Java apps which support frontend
+apps created using npm, bower and grunt.
+
+Part which is responsible for installation frontend tools was taken from public repo:
+https://github.com/whyjustin/heroku-buildpack-grunt-maven.git
+
 It uses Maven 3.0.3 to build your application and OpenJDK 1.6.0_20 to run it.
 
 Usage
