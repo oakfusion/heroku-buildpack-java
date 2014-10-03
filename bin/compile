@@ -33,6 +33,9 @@ npm install -g grunt-cli
 echo "------> Installing grunt using npm"
 npm install -g grunt
 
+echo "------> Clean npm cache and instal imagemin"
+npm cache clean && npm install gruntjs/grunt-contrib-imagemin
+
 # Run subsequent node/npm commands from the build path
 cd $build_dir
 
